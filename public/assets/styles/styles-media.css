@@ -1,0 +1,54 @@
+@media all and (max-width: 1300px){
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+        padding-top: 50px;
+    }
+
+    .menu-mobile__trigger {
+        position: absolute;
+        top: 40px;
+        display: block;
+    }
+
+    .menu-mobile__item a {
+        text-decoration: underline dotted;
+    }
+
+    .menu-mobile__item:last-child a {
+        color: #717CFF;
+    }
+
+    .intro__image--image {
+        display: none;
+    }
+
+    .intro__flex {
+        text-align: center;
+    }
+
+    .text-container__button {
+        margin: 0 auto;
+    }
+
+    .intro__icons {
+        margin: 25px auto;
+        width: fit-content;
+    }
+
+    .container__flex {
+        display: block;
+    }
+
+    .contacts__map iframe {
+        width: 100%;
+    }
+
+    .footer__logo {
+        margin: 0 auto;
+    }
+
+}

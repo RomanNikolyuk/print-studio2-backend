@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color :#373737;
+    font-family:Metropolis-Bold, sans-serif;
+    font-size:37px;
+}
+
+.pricing__content li {
+    list-style-type: square !important;
+}
+
+.contacts__map iframe {
+    width: 100%;
+}
