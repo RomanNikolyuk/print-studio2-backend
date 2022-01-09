@@ -578,7 +578,7 @@ return [
         // "to" => "Tonga",
         // "tr_TR" => "Turkish (Turkey)",
         // "tr" => "Turkish",
-        // "uk_UA" => "Ukrainian (Ukraine)",
+         "uk_UA" => "Ukrainian (Ukraine)",
         // "uk" => "Ukrainian",
         // "ur_IN" => "Urdu (India)",
         // "ur_PK" => "Urdu (Pakistan)",

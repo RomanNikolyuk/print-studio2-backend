@@ -9,6 +9,8 @@ class Models extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name'];
+
     public function price()
     {
         return $this->belongsToMany(Price::class);
