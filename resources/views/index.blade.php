@@ -31,7 +31,7 @@
                     <li class="menu__item"><a href="{{ route('pricing.index') }}">Прайс</a></li>
                 </ul>
 
-                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue accent-2 menu-mobile__trigger">
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light red accent-2 menu-mobile__trigger">
                     <i class="material-icons">menu</i>
                 </a>
 
@@ -89,7 +89,7 @@
                         <div class="card-content">
                             <span class="card-title">Заправка картриджів</span>
                             <p>Очищення всіх складових частин картриджа, полірування і промивка барабанів та лез відповідними розчинами, наповнення високоякісним тонером</p>
-                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>
+{{--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>--}}
 
                         </div>
                     <!-- </div> -->
@@ -103,7 +103,7 @@
                         <div class="card-content">
                             <span class="card-title">Відновлення картриджів</span>
                             <p>Заміна барабанів, лез та інших рухомих частин на нові та наповнення тонером. При дотриманні правил експлуатації принтера можлива 4-6 разова заправка картриджів після відновлення</p>
-                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>
+{{--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>--}}
 
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                         <div class="card-content">
                             <span class="card-title">Вічний картридж</span>
                             <p>Отримайте постійно працюючий картридж, який не потребує відновлення</p>
-                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>
+{{--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>--}}
 
                         </div>
                     </div>

@@ -19,7 +19,7 @@
     }
 
     .menu-mobile__item:last-child a {
-        color: #717CFF;
+        color: #cb4335;
     }
 
     .intro__image--image {
@@ -28,6 +28,10 @@
 
     .intro__flex {
         text-align: center;
+    }
+
+    .text-container__title {
+        font-size: 45px;
     }
 
     .text-container__button {
@@ -43,6 +47,10 @@
         display: block;
     }
 
+    .card {
+        width: auto;
+    }
+
     .contacts__map iframe {
         width: 100%;
     }
@@ -50,5 +58,6 @@
     .footer__logo {
         margin: 0 auto;
     }
+
 
 }

@@ -26,6 +26,11 @@ html {
     width: 279px;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+}
+
 .menu__item:hover {
     background: none !important;
     transition: none !important;
