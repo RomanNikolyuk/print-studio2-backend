@@ -10,7 +10,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="{{ asset('assets') }}/styles/styles.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/styles/styles-media.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Int-Service - заправка та відновлення катриджів м. Луцьк</title>
+    <meta name="og:title" content="Головна">
+    <meta name="og:url" content="https://int-service.com.ua/">
+    <meta name="og:type" content="website">
+    <meta name="description" content="Заправка та відновлення картриджів. Технічне обслуговування принтерів. Виїзд спеціаліста у Луцьку">
 </head>
 <body>
     <div class="intro">
@@ -74,7 +81,7 @@
             </p>
 
             <div class="row" id="services">
-                <div class="col s12 m6">
+                <!-- <div class="col s12 m6"> -->
                     <div class="card">
                         <div class="card-image">
                             <img src="{{ asset('assets') }}/images/zapravka.png" onerror="this.style.display = 'none'">
@@ -85,10 +92,10 @@
                             <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>
 
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
 
-                <div class="col s12 m6">
+                <!-- <div class="col s12 m6"> -->
                     <div class="card">
                         <div class="card-image">
                             <img src="{{ asset('assets') }}/images/vidnovlennya.png" onerror="this.style.display = 'none'">
@@ -100,12 +107,12 @@
 
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
 
 
             <div class="row">
-                <div class="col s12 m6">
+                <!-- <div class="col s12 m6"> -->
                     <div class="card">
                         <div class="card-image">
                             <img src="{{ asset('assets') }}/images/vichnyy.png" alt="" onerror="this.style.display = 'none'">
@@ -117,17 +124,17 @@
 
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>
 
     <div class="contacts">
         <div class="container">
-            <h1 class="contacts__title" id="contacts">Контакти</h1>
+            <h1 class="contacts__title" id="">Контакти</h1>
 
             <div class="container__flex">
-                <div class="contacts__text">
+                <div class="contacts__text" id="contacts">
                     <p><strong>Адреса: </strong>Луцьк, вул.Гаврилюка, 14</p>
                     <p>
                         Vodafone: <a href="tel:+380953118455">+380953118455</a> <br>

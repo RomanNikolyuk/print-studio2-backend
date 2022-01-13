@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="{{ asset('assets') }}/styles/pricing.css">
-    <title>Прайс-лист</title>
+    <title>Int-Service - заправка та відновлення катриджів м. Луцьк | Прайс-лист</title>
+    <meta name="og:title" content="Головна">
+    <meta name="og:url" content="https://int-service.com.ua/pricing">
+    <meta name="og:type" content="website">
+    <meta name="description" content="Ціни на заправку, відновлення картриджів у м.Луцьку">
 </head>
 <body>
 

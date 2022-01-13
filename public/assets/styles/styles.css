@@ -1,14 +1,11 @@
 @font-face {
-    font-family: "Metropolis-Medium";
-    src: url("/assets/fonts/Metropolis-Medium.otf") format("otf");
-}
-@font-face {
-    font-family: "Metropolis-Black";
-    src: url("/assets/fonts/Metropolis-Black.otf") format("otf");
+    font-family: 'Merriweather', serif;
 }
 
 html {
     scroll-behavior: smooth;
+    font-family: Merriweather, serif;
+    font-weight: 300;
 }
 
 .navigation {
@@ -17,10 +14,16 @@ html {
     margin: 30px 0;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    height: fit-content;
 }
 
 .intro {
     margin-bottom: 50px;
+}
+
+.logo {
+    width: 279px;
 }
 
 .menu__item:hover {
@@ -39,7 +42,6 @@ html {
 .menu__item a {
     color: #373737;
     position: relative;
-    font-family: Metropolis-Medium, sans-serif;
     font-weight: bold;
     overflow: hidden;
 }
@@ -55,7 +57,7 @@ html {
     left: 15%;
     width: 25px;
     height: 3px;
-    background: #717CFF;
+    background: #cb4335;
     border-radius: 30%;
     opacity: 0;
     transition: .2s all linear;
@@ -68,9 +70,8 @@ nav ul a:hover {
 .menu__item:last-child a {
     color: #373737;
     position: relative;
-    font-family: Metropolis-Medium, sans-serif;
     font-weight: bold;
-    border: 2px solid #717CFF;
+    border: 2px solid #cb4335;
     padding: 0 25px;
     border-radius: 15%;
     transition: .2s all ease-in-out;
@@ -82,7 +83,7 @@ nav ul a:hover {
 
 .menu__item:last-child a:hover {
     color: white;
-    background: #717CFF;
+    background: #cb4335;
 }
 
 .menu-mobile {
@@ -101,27 +102,26 @@ nav ul a:hover {
 }
 
 .text-container__title {
-    font-family: Metropolis-Black, sans-serif;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .changer-container__item {
-    color: #717CFF;
+    color: #cb4335;
 }
 
 .text-container__changer-container  {
     display: flex;
     flex-direction: column;
-    height: 70px;
-    overflow: hidden;
+    /*height: 70px;*/
+    /*overflow: hidden;*/
 }
 
 .changer-container__item {
-    transform: translateY(0);
-    animation: changing 3s ease-out infinite alternate;
+    /*transform: translateY(0);
+    animation: changing 3s ease-out infinite alternate;*/
 }
 
-@keyframes changing {
+/*@keyframes changing {
     50% {
         transform: translateY(-100%);
     }
@@ -129,29 +129,33 @@ nav ul a:hover {
     100% {
         transform: translateY(-200%);
     }
-}
+}*/
 
 .text-container__description {
     color:#7D7D7D;
-    font-family: Metropolis-Medium, sans-serif;
     font-size:22px;
 }
 
 .text-container__button {
     display: flex;
     padding: 20px 40px;
-    background: #717CFF;
+    background: #cb4335;
     color: white;
-    font-family: Metropolis-Medium, sans-serif;
     align-items: center;
     justify-content: center;
     width: min-content;
     border-radius: 5%;
 }
 
+.intro__icons i {
+    color: #cb4335;
+    margin-top: 15px;
+}
+
 .intro .material-icons {
     margin-right: 15px;
     user-select: none;
+
 }
 
 .intro__image--image {
@@ -168,15 +172,17 @@ nav ul a:hover {
 .about-us__title, .contacts__title {
     margin-top: 150px;
     color:#373737;
-    font-family:Metropolis-Bold, sans-serif;
     font-size:37px;
     font-weight: bold;
     text-align: center;
 }
 
+.contacts__text {
+    font-size: 24px;
+}
+
 .about-us__description {
     color:#7D7D7D;
-    font-family:Metropolis-Medium, sans-serif;
     font-size:22px;
     text-align: center;
 }
@@ -185,6 +191,7 @@ nav ul a:hover {
     box-shadow: none;
     -webkit-box-shadow: none;
     margin-top: 50px;
+    width: 600px;
 }
 
 .card:hover {
@@ -192,7 +199,6 @@ nav ul a:hover {
 }
 
 .card-content {
-    font-family: Metropolis-Bold, sans-serif;
     font-weight: bold;
 }
 
@@ -207,10 +213,8 @@ nav ul a:hover {
 .card__link {
     display: flex;
     width: min-content;
-    justify-content: center;
     align-items: center;
-    color:#717CFF;
-    font-family:Metropolis-Bold, sans-serif;
+    color:#cb4335;
     font-size:17px;
     margin-top: 30px;
 }
