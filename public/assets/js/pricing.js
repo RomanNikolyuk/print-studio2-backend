@@ -5,7 +5,12 @@ class Table {
         this.rows = document.querySelectorAll('.' + tClass + ' tbody '  + ' tr');
         this.input = document.querySelector('.' + tSearch);
 
-        this.listener()
+        if (this.tableBody && this.rows && this.input) {
+            this.listener()
+        } else {
+            console.log('Table ' + tClass + ' not initialized. Table or input not found!')
+        }
+
     }
 
     listener() {

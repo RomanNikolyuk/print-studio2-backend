@@ -36,22 +36,26 @@
 <body>
 
 <div class="pricing container">
-    <h1 class="pricing__content--title">Прайс-лист
+    <h1 class="pricing__content--title">
+        @if(!isset($pdf) || !$pdf)
+            <a class="btn-floating btn-medium waves-effect waves-light red" href="{{ route('index') }}"><i class="material-icons">arrow_back</i></a>
+        @endif
+        Прайс-лист
         @if(!isset($pdf) || !$pdf)
             <a class="btn-floating btn-medium waves-effect waves-light red" href="{{ route('pricing.pdf') }}"><i class="material-icons">file_download</i></a>
         @endif
     </h1>
-    @if(!isset($pdf) || !$pdf)
+    {{--@if(!isset($pdf) || !$pdf)
         <ul class="pricing__content">
             <li><a href="#table1">Заправка, відновлення, обслуговування картриджів</a></li>
             <li><a href="#table2">Технічне обслуговування принтерів</a></li>
             <li><a href="#consumables">Розхідні матеріали</a></li>
             <li><a href="#contacts">Контакти</a></li>
         </ul>
-    @endif
+    @endif--}}
 
     <h1 class="table1__title">
-        Прайс на заправку, відновлення та обслуговування картриджів
+        Заправка, відновлення та обслуговування картриджів
     </h1>
     <table class="highlight table1" id="table1">
         <thead>
@@ -108,6 +112,7 @@
         *** "Вічний картридж" дозволяє отримати постійно працюючий картридж, який не потребує відновлення.
     </p>
 
+    {{--@if(isset($pdf) && $pdf)
     <h1 class="pricing__table2--title">
         Прайс на технічне обслуговування принтерів
     </h1>
@@ -146,27 +151,27 @@
         <strong>Розхідні матеріали</strong> <br>
         Здійснюємо продаж розхідних матеріалів. Деталі уточнюйте за контактними телефонами або поштою.
     </p>
-
+    @endif--}}
     @if(!isset($pdf) || !$pdf)
-        <div class="contacts">
-            <h1 class="contacts__title" id="contacts">Контакти</h1>
+{{--        <div class="contacts">--}}
+{{--            <h1 class="contacts__title" id="contacts">Контакти</h1>--}}
 
-            <div class="contacts__text">
-                <p><strong>Адреса: </strong>Луцьк, вул.Гаврилюка, 14</p>
-                <p>
-                    Vodafone: +380953118455
-                    Київстар: +380971331355
-                    Укртелеком: +380332721612
-                </p>
-            </div>
+{{--            <div class="contacts__text">--}}
+{{--                <p><strong>Адреса: </strong>Луцьк, вул.Гаврилюка, 14</p>--}}
+{{--                <p>--}}
+{{--                    Vodafone: +380953118455--}}
+{{--                    Київстар: +380971331355--}}
+{{--                    Укртелеком: +380332721612--}}
+{{--                </p>--}}
+{{--            </div>--}}
 
-            <div class="contacts__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2524.7317689160204!2d25.323719612442023!3d50.74346364755437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599ec1bd72bed%3A0xc0f11173418e9ec0!2z0YPQuy4g0JPQsNCy0YDQuNC70Y7QutCwLCAxNCwg0JvRg9GG0LosINCS0L7Qu9GL0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQzMDAw!5e0!3m2!1sru!2sus!4v1639343922350!5m2!1sru!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+{{--            <div class="contacts__map">--}}
+{{--                <iframe--}}
+{{--                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2524.7317689160204!2d25.323719612442023!3d50.74346364755437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599ec1bd72bed%3A0xc0f11173418e9ec0!2z0YPQuy4g0JPQsNCy0YDQuNC70Y7QutCwLCAxNCwg0JvRg9GG0LosINCS0L7Qu9GL0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQzMDAw!5e0!3m2!1sru!2sus!4v1639343922350!5m2!1sru!2sus"--}}
+{{--                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>--}}
+{{--            </div>--}}
 
-        </div>
+{{--        </div>--}}
     @endif
 </div>
 

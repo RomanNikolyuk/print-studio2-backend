@@ -8,6 +8,8 @@ html {
     font-weight: 300;
 }
 
+
+
 .navigation {
     background-color: #fff;
     box-shadow: none;
@@ -16,6 +18,12 @@ html {
     justify-content: space-between;
     align-content: center;
     height: fit-content;
+}
+
+.intro__kolhoz-image {
+    height: 70%;
+    width: 100%;
+    background-size: cover;
 }
 
 .intro {
@@ -99,14 +107,15 @@ nav ul a:hover {
     display: none;
 }
 
-.intro__flex {
+.flex {
     display: flex;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     justify-content: space-between;
     align-items: center;
 }
 
 .text-container__title {
+    font-size: 37px;
     font-weight: 400;
 }
 
@@ -174,7 +183,7 @@ nav ul a:hover {
     overflow: auto;
 }
 
-.about-us__title, .contacts__title {
+.about-us__title, .contacts__title, .office-equipment__title  {
     margin-top: 150px;
     color:#373737;
     font-size:37px;
@@ -182,8 +191,18 @@ nav ul a:hover {
     text-align: center;
 }
 
+.contacts {
+    /*background: #FAFAFA;*/
+}
+
 .contacts__text {
     font-size: 24px;
+}
+
+.contacts__logo {
+    width: 20px;
+    /*filter: grayscale(1);*/
+    margin-right: 10px;
 }
 
 .about-us__description {
@@ -196,7 +215,7 @@ nav ul a:hover {
     box-shadow: none;
     -webkit-box-shadow: none;
     margin-top: 50px;
-    width: 600px;
+    width: 400px;
 }
 
 .card:hover {
@@ -233,6 +252,40 @@ nav ul a:hover {
     justify-content: space-between;
 }
 
+.office-equipment {
+    overflow: auto;
+}
+
+.office-equipment__text {
+    margin-left: 28px;
+    /*width: 400px;*/
+}
+
+.advantages {
+    margin-top: 50px;
+    /*background: url("/assets/images/advantages_fon.jpg");*/
+}
+
+.advantages__flex {
+    padding: 30px 0;
+}
+
+.advantages__item {
+    width: 200px;
+}
+
+.advantages__text {
+    color: #fff;
+}
+
+.advantages__title {
+    color: white;
+    /*text-transform: uppercase;*/
+    font-size: 37px;
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: white;
+}
 
 .footer .navigation {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);

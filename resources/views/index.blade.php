@@ -43,32 +43,40 @@
                     <li class="menu-mobile__item"><a href="{{ route('pricing.index') }}">Прайс</a></li>
                 </ul>
             </nav>
-
-            <div class="intro__flex" id="main">
+            <img src="{{ asset('assets') }}/images/kolhoz.jpg" alt="Kolhoz" class="intro__kolhoz-image">
+            <div class="flex" id="main">
                 <div class="intro__text-container">
-                    <h1 class="text-container__title">Ми займаємось
+                    <h1 class="text-container__title">
+                        Ми займаємось заправкою та відновленням картриджів для принтерів, копірів та іншої офісної
+                        техніки!
+                    </h1>
+                    <p class="text-container__description">Реалізуємо оригінальні і сумісні чорнила, картриджі, розхідні
+                        матеріали для друку. Ми забезпечуємо клієнту індивідуальний підхід та пропонуємо найбільш
+                        оптимальні рішення щодо вибору друкуючої техніки та схем роботи.
+                        <br>
+                        <br>
 
-                        <div class="text-container__changer-container">
-                            <span class="changer-container__item">заправкою</span>
-                            <span class="changer-container__item">відновленням</span>
-                            <span class="changer-container__item">ремонтом</span>
-                        </div>
+                        Наша компанія створена для того, щоб заощадити кошти тих, хто користується принтерами та
+                        копірами для друку документів та зображень.
+                        <br>
+                        <br>
 
-                        принтерів</h1>
-                    <p class="text-container__description">Ми займаємось заправкою та відновленням картриджів для принтерів, копірів та іншої офісної техніки, реалізуємо оригінальні і сумісні чорнила, картриджі, розхідні матеріали для друку</p>
-                    <a href="#contacts" class="text-container__button">Замовити <i class="material-icons">arrow_forward</i></a>
-<!--                    <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>-->
-
+                        Ми дійсно якісно надаємо послуги. Адже саме якість послуг, що надаються і ввічливість наших
+                        співробітників, викличуть бажання звернутись до нас повторно. А можливо, і стати нашим постійним
+                        клієнтом!
+                        <br>
+                        <br>
+                    </p>
                 </div>
 
                 <div class="intro__image">
                     <img src="{{ asset('assets') }}/images/intro.jpg" alt="Intro Image" class="intro__image--image">
                 </div>
             </div>
-            <div class="intro__icons">
+            {{--<div class="intro__icons">
                 <a href="tel:+380953118455"><i class="material-icons">phone_in_talk</i></a>
                 <a href="https://goo.gl/maps/yHGUvYjLNRiPLagp6"><i class="material-icons">map</i></a>
-            </div>
+            </div>--}}
         </div>
     </div>
 
@@ -81,7 +89,7 @@
             </p>
 
             <div class="row" id="services">
-                <!-- <div class="col s12 m6"> -->
+                <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image">
                             <img src="{{ asset('assets') }}/images/zapravka.png" onerror="this.style.display = 'none'">
@@ -89,13 +97,13 @@
                         <div class="card-content">
                             <span class="card-title">Заправка картриджів</span>
                             <p>Очищення всіх складових частин картриджа, полірування і промивка барабанів та лез відповідними розчинами, наповнення високоякісним тонером</p>
-{{--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>--}}
+                            <!--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>-->
 
                         </div>
-                    <!-- </div> -->
+                    </div>
                 </div>
 
-                <!-- <div class="col s12 m6"> -->
+                <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image">
                             <img src="{{ asset('assets') }}/images/vidnovlennya.png" onerror="this.style.display = 'none'">
@@ -103,16 +111,16 @@
                         <div class="card-content">
                             <span class="card-title">Відновлення картриджів</span>
                             <p>Заміна барабанів, лез та інших рухомих частин на нові та наповнення тонером. При дотриманні правил експлуатації принтера можлива 4-6 разова заправка картриджів після відновлення</p>
-{{--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>--}}
+                            <!--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>-->
 
                         </div>
                     </div>
-                <!-- </div> -->
-            </div>
+                </div>
 
 
-            <div class="row">
-                <!-- <div class="col s12 m6"> -->
+
+                <!--            <div class="row">-->
+                <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image">
                             <img src="{{ asset('assets') }}/images/vichnyy.png" alt="" onerror="this.style.display = 'none'">
@@ -120,14 +128,76 @@
                         <div class="card-content">
                             <span class="card-title">Вічний картридж</span>
                             <p>Отримайте постійно працюючий картридж, який не потребує відновлення</p>
-{{--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>--}}
+                            <!--                            <a href="#contacts" class="card__link">Замовити <i class="material-icons">arrow_forward</i></a>-->
 
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>
+                <!--            </div>-->
             </div>
         </div>
     </div>
+
+    <div class="office-equipment">
+        <div class="container">
+            <h1 class="office-equipment__title" id="office-equipment">Ремонт оргтехніки</h1>
+
+            <div class="container__flex">
+                <div class="office-equipment__image">
+                    <img src="{{ asset('assets') }}/images/orgtech_remont.jpg" alt="" class="">
+                </div>
+
+                <div class="office-equipment__text">
+                    <p>Компанія “inTservice”, пропонує висококласне обслуговування та ремонт оргтехніки у Луцьку!
+                        <br><br>
+                        Переконайтеся на власному досвіді, що наші кваліфіковані інженери можуть усунути поломки
+                        будь-якої складності у стислі терміни. Не відкладайте, приносьте несправну оргтехніку до нас, і
+                        ми повернемо їй робочий стан!<br><br>
+                        Наші інженери, які виконують ремонт будь-якої складності, мають вищу технічну освіту,
+                        сертифікати і досвід роботи від 3-х років.<br><br>
+                        Сервісні центри нашої мережі оснащені надійним ремонтним обладнанням та інвентарем, що дозволяє
+                        проводити ремонт оргтехніки дуже швидко.<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="advantages" style="background: url('{{ asset('assets') }}/images/advantages_fon.jpg')">
+        <div class="container">
+            <h1 class="advantages__title">Наші переваги</h1>
+            <div class="flex advantages__flex">
+                <div class="advantages__item">
+                    <img src="{{ asset('assets') }}/images/advantages_1.png" alt="">
+                    <p class="advantages__text">Оперативність виконання замовлення</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="{{ asset('assets') }}/images/advantages_2.png" alt="">
+                    <p class="advantages__text">Безкоштовна доставка по місту</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="{{ asset('assets') }}/images/advantages_3.png" alt="">
+                    <p class="advantages__text">Наявність підмінного фонду для оперативної підтримки</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="{{ asset('assets') }}/images/advantages_4.png" alt="">
+                    <p class="advantages__text">Висока якість обслуговування</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="{{ asset('assets') }}/images/advantages_5.png" alt="">
+                    <p class="advantages__text">Виїзд спеціаліста до замовника</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="{{ asset('assets') }}/images/advantages_6.png" alt="">
+                    <p class="advantages__text">Компанія з багаторічним стажем</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
 
     <div class="contacts">
         <div class="container">
@@ -135,16 +205,16 @@
 
             <div class="container__flex">
                 <div class="contacts__text" id="contacts">
-                    <p><strong>Адреса: </strong>Луцьк, вул.Гаврилюка, 14</p>
+                    <p><strong>Адреса: </strong>м.Луцьк Київський майдан 11А</p>
                     <p>
-                        Vodafone: <a href="tel:+380953118455">+380953118455</a> <br>
-                        Київстар: <a href="tel:+380971331355">+380971331355</a> <br>
-                        Укртелеком: <a href="tel:+380332721612">+380332721612</a> <br>
+                        <img src="{{ asset('assets') }}/images/kyivstar_logo.png" alt="" class="contacts__logo"><img src="{{ asset('assets') }}/images/telegram_logo.webp" alt="" class="contacts__logo"><img src="{{ asset('assets') }}/images/viber-logo.png" alt="" class="contacts__logo">Київстар: <a href="tel:+380971331355">+380971331355</a> <br>
+                        <img src="{{ asset('assets') }}/images/vodafone_logo.png" alt="" class="contacts__logo">Vodafone: <a href="tel:+380953118455">+380953118455</a> <br>
                     </p>
                 </div>
 
                 <div class="contacts__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2524.7317689160204!2d25.323719612442023!3d50.74346364755437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599ec1bd72bed%3A0xc0f11173418e9ec0!2z0YPQuy4g0JPQsNCy0YDQuNC70Y7QutCwLCAxNCwg0JvRg9GG0LosINCS0L7Qu9GL0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQzMDAw!5e0!3m2!1sru!2sus!4v1639343922350!5m2!1sru!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.7923085587986!2d25.351054516291853!3d50.74234087416949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259a1ccb6c61cb%3A0xce2de1b6affadaee!2z0JrQuNGX0LLRgdGM0LrQuNC5INC80LDQudC00LDQvSwgMTEsINCb0YPRhtGM0LosINCS0L7Qu9C40L3RgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDMwMDA!5e0!3m2!1suk!2sua!4v1642710878173!5m2!1suk!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
