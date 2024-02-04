@@ -6,9 +6,9 @@ use App\Http\Requests\PriceRequest;
 use App\Models\ModelPrice;
 use App\Models\Models;
 use App\Models\Price;
+use App\Support\CRUD\Traits\DeleteOperation;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
-use \Illuminate\Http\Request;
 
 /**
  * Class PriceCrudController
@@ -20,7 +20,7 @@ class PriceCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
+    use DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
     /**
